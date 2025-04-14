@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Agents</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestion des Agents</h1>
+    </header>
+
+    <section id="loginSection">
+        <h2>Connexion</h2>
+        <form id="loginForm">
+            <input type="text" id="loginID" placeholder="ID" required>
+            <input type="password" id="loginPassword" placeholder="Mot de passe" required>
+            <button type="submit">Se connecter</button>
+        </form>
+        <p id="loginError" style="color: red;"></p>
+    </section>
+
+    <section id="adminSection" style="display: none;">
+        <h2>Admin - Liste des Agents</h2>
+        <button id="logoutBtn">Se Déconnecter</button>
+        <button id="addAgentBtn">Ajouter un Agent</button>
+        <div id="agentList"></div>
+
+        <h3>Ajouter un compte</h3>
+        <form id="createAccountForm">
+            <input type="text" id="newID" placeholder="ID de l'utilisateur" required>
+            <input type="password" id="newPassword" placeholder="Mot de passe" required>
+            <button type="submit">Créer le compte</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -212,4 +212,7 @@ function loadAgents() {
         agentList.appendChild(li);
     });
 }
+let users = [
+    { id: "Luca", password: "Rugby123!", permissions: ["admin"] }
+];
 
